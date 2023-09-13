@@ -52,11 +52,7 @@ class Chatroom {
 }
 
 
-const chatroom = new Chatroom('general', 'riley')
 
-chatroom.getChats((data) => {
-    console.log(data)
-})
 
 // console.log(chatroom) 
 
