@@ -24,9 +24,12 @@ newNameForm.addEventListener('submit', e => {
     setTimeout(() => updateMssg.innerText = '', 3000)
 })
 
+// check localStorage for a name
+const username = localStorage.username ? localStorage.username : 'anon'
+
 // class instances
 const chatUI = new ChatUI(chatList)
-const chatroom = new Chatroom('general', 'riley')
+const chatroom = new Chatroom('general', username)
 
 
 // adding a chat
